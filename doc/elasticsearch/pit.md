@@ -18,6 +18,6 @@
 * [Completion Suggester Version 2](https://github.com/elastic/elasticsearch/issues/8909)
 * [Add support for returning documents with completion suggester #19536](https://github.com/elastic/elasticsearch/pull/19536)
 
-### wait for v5.0
+# wait for v5.0
 
 ***
