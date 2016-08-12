@@ -23,4 +23,4 @@ stts服务的api文档
 ## [ElasticSearch](./doc/elasticsearch)
 * ~~ElasticSearch Instruction~~
 * [ElasticSearch Response](./doc/elasticsearch/response.md)
-* [ElasticSearch Update](./doc/elasticsearch/update.md)
+* [ElasticSearch Update Log](./doc/elasticsearch/update.md)
