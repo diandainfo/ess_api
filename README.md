@@ -20,7 +20,7 @@ stts服务的api文档
         * GET:/get 获取 [*不提供对外接口，使用`/log/info`查看页面*]
 
 
-## [ElasticSearch](./doc/elasticsearch)
-* ~~ElasticSearch Instruction~~
+## ElasticSearch
+* [ElasticSearch Instruction](./doc/elasticsearch)
 * [ElasticSearch Response](./doc/elasticsearch/response.md)
 * [ElasticSearch Update Log](./doc/elasticsearch/update.md)
