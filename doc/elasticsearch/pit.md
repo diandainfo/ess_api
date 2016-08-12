@@ -1,6 +1,7 @@
 
 # Pit
-* Elasticsearch中的坑
+
+**Elasticsearch中的坑**
 
 ## 1. Deleted documents show up in completion suggester
 **当在index中删除document后，依然可以通过completion suggester查询到对应的信息**
