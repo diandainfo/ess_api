@@ -1,4 +1,7 @@
-# 0. /history_log/_mapping
+
+# 用户浏览商品记录
+
+# 0. Mapping
 ```
 {
     "mappings":{
