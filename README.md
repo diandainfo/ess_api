@@ -1,7 +1,7 @@
 
-# stts_api
+# ess_api
 
-stts服务的api文档
+**基于ES的上层service的api文档**
 
 ## API接口列表(使用层次递进的router结构)
 * /api
