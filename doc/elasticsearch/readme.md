@@ -11,6 +11,7 @@
 ||[Elasticsearch-deletebyquery](https://github.com/dermidgen/elasticsearch-deletebyquery)|None|批量查询删除插件|done|[需要安装plugin](http://stackoverflow.com/questions/37177359/how-to-delete-document-matching-a-query-using-official-elasticsearch-nodejs-clie)|
 |river|[elasticsearch-jdbc](https://github.com/jprante/elasticsearch-jdbc)|2.3.4.0|es-river-jdbc|done|1、跟river有区别，具体参数见[Parameters](https://github.com/jprante/elasticsearch-jdbc#parameters) 2、[必须跑在jre8以上](https://github.com/jprante/elasticsearch-jdbc/issues/805)|
 |Sheild||2.0+|[访问控制](https://www.elastic.co/downloads/shield)|||
+|Kibana||||||
 
 ### 1.1 Installation
 * [Installation Steps](https://www.elastic.co/downloads/elasticsearch)
