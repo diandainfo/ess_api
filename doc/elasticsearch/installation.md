@@ -4,7 +4,7 @@
 **安装Elasticsearch_v2.3.4环境**
 
 ## Step 
-1. 安装ES
+### 1. 安装ES
   * 下载2.3.4版本ES
   ```
     wget https://download.elastic.co/elasticsearch/release/org/elasticsearch/distribution/zip/elasticsearch/2.3.4/elasticsearch-2.3.4.zip
