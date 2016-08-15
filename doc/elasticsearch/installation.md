@@ -4,7 +4,7 @@
 **安装Elasticsearch_v2.3.4环境**
 
 ## Step 
-* 安装ES
+1. 安装ES
   * 下载2.3.4版本ES
   ```
     wget https://download.elastic.co/elasticsearch/release/org/elasticsearch/distribution/zip/elasticsearch/2.3.4/elasticsearch-2.3.4.zip
@@ -32,16 +32,16 @@
       
       http.port: 9200                                # 访问端口
       
-      transport.tcp.port: 9300                       # 两节点间通信端口，默认为9300
+      transport.tcp.port: 9300                       # 节点间通信端口，默认为9300
       
       transport.tcp.compress: true                   # 节点通信是否使用压缩，默认为不使用
     ```
     * 暂不需要配置
-     * 使用[Update API](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-update.html)中script时，需要追加配置参数
-    ```
-     script.inline: on
-     script.indexed: on
-     script.file: on
-
-    ```
+      * 使用[Update API](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-update.html)中script时，需要追加配置参数
+      ```
+       script.inline: on
+       script.indexed: on
+       script.file: on
+  
+      ```
     
