@@ -14,6 +14,7 @@
 |kibana|||UI|||
 
 ### 1.1 Installation
+* [Steps](./Installation.md)
 * [Installation Steps](https://www.elastic.co/downloads/elasticsearch)
 
 ### 1.2 Run
