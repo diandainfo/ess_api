@@ -1,7 +1,7 @@
 # Elasticsearch Response
 **ElasticSearch请求的标准返回说明**
  
- **返回示例**
+ * **返回示例**
 
 ``` 
 "data": {
@@ -29,7 +29,7 @@
     }
 ```
 
- **返回参数说明** 参见[《更省时的批量操作》](http://es.xiaoleilu.com/030_Data/55_Bulk.html)
+* **返回参数说明** 参见[《更省时的批量操作》](http://es.xiaoleilu.com/030_Data/55_Bulk.html)
  
 |参数名||类型|说明|
 |:----|:-----|:-----|-----|
