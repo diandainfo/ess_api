@@ -40,9 +40,9 @@
     * 暂不需要配置
       * 使用[Modules » Scripting](https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-scripting.html#modules-scripting)时，需要追加配置参数
       ```
-       script.inline: on
-       script.indexed: on
-       script.file: on
+       script.inline: sandbox
+       script.indexed: sandbox
+       script.file: true
   
       ```
     
