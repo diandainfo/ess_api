@@ -20,7 +20,7 @@
       cd elasticsearch-2.3.4
       vim config/elasticsearch.yml
     ```
-    
+    ![es配置参数](./images/es-config-1.png)
     * 修改配置，#为注释
     ```
       cluster.name: diandainfo #es运行时进程名
