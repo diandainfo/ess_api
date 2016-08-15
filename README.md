@@ -26,5 +26,6 @@
 ## ElasticSearch
 * [ElasticSearch Instruction](./doc/elasticsearch/readme.md)
 * [ElasticSearch Installation](./doc/elasticsearch/installation.md)
+* [ElasticSearch Option](./doc/elasticsearch/option.md)
 * [ElasticSearch Response](./doc/elasticsearch/response.md)
 * [ElasticSearch Update](./doc/elasticsearch/update.md)
