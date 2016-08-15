@@ -14,8 +14,7 @@
 |kibana|||UI|||
 
 ### 1.1 Installation
-* [Steps](./Installation.md)
-* [Installation Steps](https://www.elastic.co/downloads/elasticsearch)
+* [Steps](./installation.md)
 
 ### 1.2 Run
 * **不建议**run在root下[bin/elasticsearch -Des.insecure.allow.root=true](http://stackoverflow.com/questions/34920801/how-to-run-elasticsearch-2-1-1-as-root-user-in-linux-machine)
