@@ -37,7 +37,7 @@
       transport.tcp.compress: true                   # 节点通信是否使用压缩，默认为不使用
     ```
     * 暂不需要配置
-      * 使用[Update API](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-update.html)中script时，需要追加配置参数
+      * 使用[Modules » Scripting](https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-scripting.html#modules-scripting)中script时，需要追加配置参数
       ```
        script.inline: on
        script.indexed: on
