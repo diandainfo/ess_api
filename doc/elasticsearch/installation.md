@@ -11,6 +11,7 @@
     
   ```
   * 解压缩，生成`elasticsearch-2.3.4`的目录
+  * 
   ```
     unzip elasticsearch-2.3.4.zip
   ```
