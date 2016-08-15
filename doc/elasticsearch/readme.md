@@ -5,7 +5,7 @@
 |组件||版本|说明|状态|坑|
 |:----|:---|:-----|-----|-----|-----|
 |Elasticsearch |  |2.3.4 |使用elsearch用户运行|done|[《填坑指南》](./pit.md)|
-|plugin |Elasticsearch-head  |2.3.4 ||done||
+|plugin |[Elasticsearch-head](https://github.com/mobz/elasticsearch-head)  |2.3.4 |UI|done||
 ||[Elasticsearch-analysis-pinyin](https://github.com/medcl/elasticsearch-analysis-pinyin)|1.9.4|pinyin转换器|done||
 ||[Elasticsearch-analysis-ik](https://github.com/medcl/elasticsearch-analysis-ik)|1.7.4|ik分词器|done||
 ||[Elasticsearch-deletebyquery](https://github.com/dermidgen/elasticsearch-deletebyquery)|None|批量查询删除插件|done|[需要安装plugin](http://stackoverflow.com/questions/37177359/how-to-delete-document-matching-a-query-using-official-elasticsearch-nodejs-clie)|
