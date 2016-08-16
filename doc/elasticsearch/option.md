@@ -8,3 +8,6 @@
 * 分片原理，见[《Elasticsearch权威指南》 - 深入分片](http://es.xiaoleilu.com/075_Inside_a_shard/00_Intro.html)
 * 相关实例，见[《实例展示elasticsearch集群生态,分片以及水平扩展》](http://www.cnblogs.com/dennisit/p/4133131.html)
 
+## 2. score
+* [How scoring works in Elasticsearch
+](https://www.compose.com/articles/how-scoring-works-in-elasticsearch/)
