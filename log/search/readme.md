@@ -43,17 +43,25 @@
  **返回示例**
 * `type` 为 `simple` 时	
   ``` 
-	  {
-	    "status": 1,
-	    "message": "",
-	    "data": {
-	        "_index": "log_info_v1",
-	        "_type": "back",
-	        "_id": "AVYHR1TWivQZAyEcTy7G",
-	        "_version": 1,
-	        "created": true
-	    }
-	}
+{
+    "status": 1,
+    "message": "",
+    "data": {
+        "count": 19,
+        "data": [
+            "奥妙",
+            "奥利奥",
+            "寿司",
+            "可",
+            "可比克",
+            "康师傅",
+            "可乐",
+            "散娃",
+            "散",
+            "顺心"
+        ]
+    }
+}
   ```
 
 * `type` 为 `full` 时
