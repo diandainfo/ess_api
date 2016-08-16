@@ -1,3 +1,6 @@
+
+# 信息日志
+
 # 0. /log_info/_mapping
 ```
 {
