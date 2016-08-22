@@ -34,6 +34,7 @@
 * [ElasticSearch Update](./doc/elasticsearch/update.md)
 
 ## Kibana
+* [Kibana Installation](./doc/kibana/installation.md)
 
 # [History](./history.md)
 
