@@ -32,3 +32,9 @@
 * [ElasticSearch Option](./doc/elasticsearch/option.md)
 * [ElasticSearch Response](./doc/elasticsearch/response.md)
 * [ElasticSearch Update](./doc/elasticsearch/update.md)
+
+## Kibana
+
+# [History](./history.md)
+
+# [LICENSE](./LICENSE)
