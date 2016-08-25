@@ -1,5 +1,6 @@
 
 # 货架商品
+> [具体实现说明](../../doc/elasticsearch/search/readme.md)
 
 # 0.1 Index
 ```
