@@ -11,3 +11,9 @@
 ## 2016年8月12日14:24:22
 * 替换pinyin的使用方法，使用match替换completion suggester，已解决update/delete index后suggester查询的doc不更新的bug
 * 将log_error和log_info的set转移到request中，直接使用ES的port解决高并发的承载问题
+
+## 2016年8月18日15:45:29
+* 重现pinyin+ik的搜索建议、搜索关键词方案，完成开发任务
+
+## 2016年8月25日10:46:21
+* 开始编写pinyin+ik，搜索实现方案文档
