@@ -26,8 +26,8 @@
   		* /suggest : POST [货架商品 - 搜索建议](./goods/shelf/readme.md#11-suggest)  
   		* /search : POST  [货架商品 - 搜索关键词](./goods/shelf/readme.md#12-search)  
 
-## ElasticSearch
-* [ElasticSearch Instruction](./doc/elasticsearch/readme.md)
+## [ElasticSearch](./doc/elasticsearch/readme.md)
+* [ElasticSearch Instruction](./doc/elasticsearch/instruction.md)
 * [ElasticSearch Installation](./doc/elasticsearch/installation.md)
 * [ElasticSearch Option](./doc/elasticsearch/option.md)
 * [ElasticSearch Response](./doc/elasticsearch/response.md)
