@@ -29,6 +29,7 @@
 
 ## [ElasticSearch](./doc/elasticsearch/readme.md)
 * [ElasticSearch Instruction](./doc/elasticsearch/instruction.md)
+* [ElasticSearch Pit](./doc/elasticsearch/pit.md)
 * [ElasticSearch Installation](./doc/elasticsearch/installation.md)
 * [ElasticSearch Option](./doc/elasticsearch/option.md)
 * [ElasticSearch Response](./doc/elasticsearch/response.md)
