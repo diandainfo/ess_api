@@ -16,6 +16,7 @@
 * [Completion Suggester Version 2](https://github.com/elastic/elasticsearch/issues/8909)
 
 
-## 2. 数据类型设置为Date，该字段值为空时报错
+## ~~2. 数据类型设置为Date，该字段值为空时报错~~
+* es_v2.3.4 无此问题
 
 ## ~~3. Elasticsearch-jdbc，使用普通用户权限启动.sh &后，无法使用ssh登录~~
