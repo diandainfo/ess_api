@@ -18,4 +18,4 @@
 
 ## 2. 数据类型设置为Date，该字段值为空时报错
 
-~~## 3. Elasticsearch-jdbc，使用普通用户权限启动.sh &后，无法使用ssh登录~~
+## ~~3. Elasticsearch-jdbc，使用普通用户权限启动.sh &后，无法使用ssh登录~~
