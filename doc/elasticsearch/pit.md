@@ -5,14 +5,14 @@
 
 ## 1. Deleted documents show up in completion suggester
 **当在index中删除document后，依然可以通过completion suggester查询到对应的信息**
-### 1.1 document
+### 1.1 Document
 * [Completion Suggester](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-suggesters-completion.html)
 
-### 1.2 bug
+### 1.2 Bug
 * github中Elasticsearch的issue[Deleted documents show up in completion suggester](https://github.com/elastic/elasticsearch/issues/7761)
 * stackoverflow中[elasticsearch completion field not deleting](http://stackoverflow.com/questions/27074593/elasticsearch-completion-field-not-deleting)
 
-### 1.3 solve
+### 1.9 Solve
 * [Completion Suggester Version 2](https://github.com/elastic/elasticsearch/issues/8909)
 
 
@@ -23,6 +23,8 @@
 * 应是linux系统设置原因，可能跟内存、cpu占用有关
 
 ## 4. 使用search查询进行分页时，无法查询from 10000以后的数据
+
+### 4.2 Bug
 ```
 { [Error: [query_phase_execution_exception] Result window is too large, from + size must be less than or equal to: [10000] but was [278055]. See the scroll api for a more efficient way to request large data sets. This limit can be set by changing the [index.max_result_window] index level parameter.]
   status: 500,
@@ -36,3 +38,5 @@
   toString: [Function],
   toJSON: [Function] }
 ```
+### 4.3 Reference
+* [Elasticsearch 2.1: Result window is too large (index.max_result_window)](http://stackoverflow.com/questions/35206409/elasticsearch-2-1-result-window-is-too-large-index-max-result-window)
