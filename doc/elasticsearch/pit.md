@@ -20,3 +20,19 @@
 * es_v2.3.4 无此问题
 
 ## ~~3. Elasticsearch-jdbc，使用普通用户权限启动.sh &后，无法使用ssh登录~~
+* 应是linux系统设置原因，可能跟内存、cpu占用有关
+
+## 4. 使用search查询进行分页时，无法查询from 10000以后的数据
+```
+{ [Error: [query_phase_execution_exception] Result window is too large, from + size must be less than or equal to: [10000] but was [278055]. See the scroll api for a more efficient way to request large data sets. This limit can be set by changing the [index.max_result_window] index level parameter.]
+  status: 500,
+  displayName: 'InternalServerError',
+  message: '[query_phase_execution_exception] Result window is too large, from + size must be less than or equal to: [10000] but was [278055]. See the scroll api for a more efficient way to request large data sets. This limit can be set by changing the [index.max_result_window] index level parameter.',
+  path: '/orders_goods/goods_details/_search',
+  query: {},
+  body: '{"from":"278040","size":"15","sort":[{"oid":"desc"}],"query":{"range":{"createdAt":{"gte":"2016-09-01","lte":"2016-09-14"}}}}',
+  statusCode: 500,
+  response: '{"error":{"root_cause":[{"type":"query_phase_execution_exception","reason":"Result window is too large, from + size must be less than or equal to: [10000] but was [278055]. See the scroll api for a more efficient way to request large data sets. This limit can be set by changing the [index.max_result_window] index level parameter."}],"type":"search_phase_execution_exception","reason":"all shards failed","phase":"query_fetch","grouped":true,"failed_shards":[{"shard":0,"index":"orders_goods_v1","node":"TH2v80c7TmyWaVk7NCUbMQ","reason":{"type":"query_phase_execution_exception","reason":"Result window is too large, from + size must be less than or equal to: [10000] but was [278055]. See the scroll api for a more efficient way to request large data sets. This limit can be set by changing the [index.max_result_window] index level parameter."}}]},"status":500}',
+  toString: [Function],
+  toJSON: [Function] }
+```
