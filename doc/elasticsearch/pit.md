@@ -14,6 +14,7 @@
 
 ### 1.9 Solve
 * [Completion Suggester Version 2](https://github.com/elastic/elasticsearch/issues/8909)
+* 换用search实现，参见[搜索具体实现](./search/readme.md)
 
 
 ## ~~2. 数据类型设置为Date，该字段值为空时报错~~
