@@ -177,7 +177,7 @@ body: {
                     }
                 }
                 , {
-                    match: {
+                    match_phrase: {			//## 改为完全匹配
                         name_ik: data['keyword'] 	//名称的中文分词
                     }
                 }
