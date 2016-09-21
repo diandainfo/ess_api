@@ -28,7 +28,7 @@
     ![es配置节点参数](./images/es-config-1.png)
     ![es配置网略参数](./images/es-config-2.png)
     ```
-      cluster.name: diandainfo                       # es运行时进程名
+      cluster.name: diandainfo                       # es运行时进程名、集群名，用于判断是否处于同一集群
       
       node.name: exp-1                               # 节点名称，每个节点不同，可根据[环境+序号]构成
       
@@ -36,7 +36,7 @@
       
       http.port: 9200                                # 访问端口
       
-      transport.tcp.port: 9300                       # 节点间通信端口，默认为9300
+      transport.tcp.port: 9300                       # 节点间通信端口，默认为9300，用于判断是否处于同一集群且可以通过此端口进行同步
       
       transport.tcp.compress: true                   # 节点通信是否使用压缩，默认为不使用
     ```
