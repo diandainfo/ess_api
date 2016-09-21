@@ -40,6 +40,7 @@
       
       transport.tcp.compress: true                   # 节点通信是否使用压缩，默认为不使用
     ```
+    
     * 使用[Modules » Scripting](https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-scripting.html#modules-scripting)时，需要追加配置参数
     	* updateByQuery 时用到script脚本，需要配置[script权限参数](https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-scripting.html#enable-dynamic-scripting)
       ```
