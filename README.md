@@ -23,10 +23,15 @@
       * /goods: POST [ 日志 - 搜索关键词 - 关键词聚合](./log/search/readme.md#12-goods) 
   * /goods 商品
   	* /shelf [货架商品](./goods/shelf/readme.md)
-  		* /suggest : POST [货架商品 - 搜索建议](./goods/shelf/readme.md#11-suggest)  
-  		* /search : POST  [货架商品 - 搜索关键词](./goods/shelf/readme.md#12-search)  
-  		* /analyze : POST  [货架商品 - 分词](./goods/shelf/readme.md#13-analyze)  
-
+  	  * /suggest : POST [货架商品 - 搜索建议](./goods/shelf/readme.md#11-suggest)  
+  	  * /search : POST  [货架商品 - 搜索关键词](./goods/shelf/readme.md#12-search)  
+  	  * /analyze : POST  [货架商品 - 分词](./goods/shelf/readme.md#13-analyze)  
+  * /recommend 推荐
+	* /goods [商品](./recommend/goods/readme.md)
+	  * /list :POST [推荐 - 商品 - 列表](./recommend/goods/readme.md##11-list)
+	   
+	   
+	   
 ## [ElasticSearch](./doc/elasticsearch/readme.md)
 * [ElasticSearch Instruction](./doc/elasticsearch/instruction.md)
 * [ElasticSearch Pit](./doc/elasticsearch/pit.md)
