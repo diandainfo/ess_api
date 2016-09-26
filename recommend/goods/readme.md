@@ -23,14 +23,14 @@
 |cid  |是  |string |店铺所在城市编号，即xxxx00六位数字，如320400|
 |fci  |否  |int/string |商品一级分类编号|
 |sci  |否  |int/string |商品二级分类编号|
-|dir  |否  |string |排序方式，取值为['desc','asc']|
+|dir  |否  |string |排序方式，取值为'desc'、'asc'|
 |offset|否|int |起始量，默认为0，和limit搭配使用，用于分页,取值0-10000| 
 |limit|否|int |偏移量/记录条数，默认为20，即需要返回的记录数量，取值0-10000| 
 |ft  |否  |string |返回参数,可选'all'，默认不填则只返回gid列表，'all'时返回score信息|
 
  **返回示例**
 
-- 请求：
+  - 请求:
 
 	```
 	 /api/recommend/goods/list -d '
@@ -41,7 +41,7 @@
 		,limit:1
 	}'
 	```
-- 时，返回
+     	- 时,返回
 
 	``` 
 	 {
@@ -59,6 +59,16 @@
 	    ]
 	}
 	```
+  - 请求:
+        ```
+	/api/recommend/goods/list -d '
+	{
+		ti:0
+		,cid:320400
+	}'
+	```
+        - 时,返回:
+	
 	```
 	{
 	    "status": 1,
