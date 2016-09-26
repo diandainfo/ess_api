@@ -22,6 +22,7 @@
 |ti   |是|int |typeIndex,排序分数的类型序号,取值为0-9|
 |cid  |是  |string |店铺所在城市编号，即xxxx00六位数字，如320400|
 |fci  |否  |int/string |商品一级分类编号|
+|nfi  |否  |Array:int/string |必须为数组，补充参数:推荐中去除的商品一级分类编号--使用[must_not](https://www.elastic.co/guide/en/elasticsearch/reference/1.4/query-dsl-bool-query.html)+[terms](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-terms-query.html)实现|
 |sci  |否  |int/string |商品二级分类编号|
 |dir  |否  |string |排序方式，取值为'desc'、'asc'|
 |offset|否|int |起始量，默认为0，和limit搭配使用，用于分页,取值0-10000| 
