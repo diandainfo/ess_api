@@ -143,9 +143,10 @@
 |count||int|总计符合条件的推荐商品数量|
 |data|||ft不为'all'时,返回gid数组|
 ||gid   |int     |商品编号|
-||name  |string     |商品名称|
-||cid  |inte     |城市编号|
+||score  |int     |动态分，倒序排列|
+||cid  |int     |城市编号|
 ||fci  |int     |一级分类编号|
 ||sci  |int     |二级分类编号|
+||name  |string     |商品名称|
 
 
