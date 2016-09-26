@@ -47,6 +47,7 @@
 	 {
 	    "status": 1,
 	    "message": "",
+	    "count":125,
 	    "data": [
 	        {
 	            "gid": 148095,
@@ -76,6 +77,7 @@
 	{
 	    "status": 1,
 	    "message": "",
+	    "count":256,
 	    "data": [
 	        148095,
 	        148219,
@@ -107,10 +109,10 @@
 |:----|:---|:---|:-----|
 |count||int|总计符合条件的商品搜索结果条数|
 |data|||ft不为'all'时,返回gid数组|
-||gid   |integer     |商品编号|
+||gid   |int     |商品编号|
 ||name  |string     |商品名称|
-||cid  |integer     |城市编号|
-||fci  |integer     |一级分类编号|
-||sci  |integer     |二级分类编号|
+||cid  |inte     |城市编号|
+||fci  |int     |一级分类编号|
+||sci  |int     |二级分类编号|
 
 
