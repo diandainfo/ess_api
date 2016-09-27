@@ -37,14 +37,14 @@
 * [ElasticSearch Installation](./doc/elasticsearch/installation.md)
 * [ElasticSearch Option](./doc/elasticsearch/option.md)
 * [ElasticSearch Response](./doc/elasticsearch/response.md)
-* [ElasticSearch Update](./doc/elasticsearch/update.md)
+* ElasticSearch Update 移除并合并至[Histroy]
 
 ### ElasticSearch-jdbc
-* [ElasticSearch Synchronize](http://192.168.1.8:8090/pages/viewpage.action?pageId=4620431) (参见内网知识库 » 后台系统定时任务 » 《定时任务 - ES-jdbc》)
+* [ElasticSearch Synchronize](http://192.168.1.8:8090/pages/viewpage.action?pageId=4620431) (参见内网知识库)
 
 ## Kibana
 * [Kibana Installation](./doc/kibana/installation.md)
 
-# [History](./history.md)
+# [History](http://192.168.1.8:8090/pages/viewpage.action?pageId=4620450) (迁移至内网知识库)
 
 # [LICENSE](./LICENSE)
