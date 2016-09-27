@@ -60,6 +60,7 @@
 ### 5.3 Reference
 - [_ttl problems Bulk deletion failures](https://discuss.elastic.co/t/-ttl-problems-bulk-deletion-failures/40222/3)
 - [How to make elasticsearch document ttl work?](http://stackoverflow.com/questions/16914864/how-to-make-elasticsearch-document-ttl-work)
+- [TTL Documents, Shield and Found](https://www.elastic.co/blog/ttl-documents-shield-and-found)
 
 ### 5.9 kill
 -  **?**
