@@ -11,4 +11,4 @@
 
 ## 5. [Response](./response.md)
 
-## 6. [Update](./update.md)
+## 6. [Update](移除并合并至History)
