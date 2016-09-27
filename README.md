@@ -31,7 +31,6 @@
 	  * /list :POST [推荐 - 商品 - 列表](./recommend/goods/readme.md#11-list)
 	   
 	   
-	   
 ## [ElasticSearch](./doc/elasticsearch/readme.md)
 * [ElasticSearch Instruction](./doc/elasticsearch/instruction.md)
 * [ElasticSearch Pit](./doc/elasticsearch/pit.md)
@@ -39,6 +38,8 @@
 * [ElasticSearch Option](./doc/elasticsearch/option.md)
 * [ElasticSearch Response](./doc/elasticsearch/response.md)
 * [ElasticSearch Update](./doc/elasticsearch/update.md)
+### ElasticSearch-jdbc
+* [ElasticSearch Synchronize]()(参见内网知识库 » 后台系统定时任务 » 《定时任务 - ES-jdbc》)
 
 ## Kibana
 * [Kibana Installation](./doc/kibana/installation.md)
