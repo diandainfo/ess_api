@@ -12,7 +12,7 @@
 * github中Elasticsearch的issue[Deleted documents show up in completion suggester](https://github.com/elastic/elasticsearch/issues/7761)
 * stackoverflow中[elasticsearch completion field not deleting](http://stackoverflow.com/questions/27074593/elasticsearch-completion-field-not-deleting)
 
-### 1.9 Solve
+### 1.9 kill
 * [Completion Suggester Version 2](https://github.com/elastic/elasticsearch/issues/8909)
 * 换用search实现，参见[搜索具体实现](./search/readme.md)
 
@@ -44,6 +44,9 @@
 
 
 ## 5. 2.x+下ttl导致的bug
+
+### 5.1 Document
+- [Elasticsearch Reference [2.4] » Mapping » Meta-Fields » _ttl field](https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping-ttl-field.html)
 
 ### 5.2 Bug
 ```
