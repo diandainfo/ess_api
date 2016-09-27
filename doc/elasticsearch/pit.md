@@ -39,5 +39,24 @@
   toString: [Function],
   toJSON: [Function] }
 ```
-### 4.3 Reference
+### 4.9 kill
 * [Elasticsearch 2.1: Result window is too large (index.max_result_window)](http://stackoverflow.com/questions/35206409/elasticsearch-2-1-result-window-is-too-large-index-max-result-window)
+
+
+## 5. 2.x+下ttl导致的bug
+
+### 5.2 Bug
+```
+[2016-09-27 17:22:41,720][ERROR][indices.ttl              ] [dd528_node1] bulk deletion failures for [21]/[21] items
+[2016-09-27 17:22:41,775][ERROR][indices.ttl              ] [dd528_node1] bulk deletion failures for [769]/[782] items
+[2016-09-27 17:23:41,743][ERROR][indices.ttl              ] [dd528_node1] bulk deletion failures for [21]/[21] items
+[2016-09-27 17:23:41,792][ERROR][indices.ttl              ] [dd528_node1] bulk deletion failures for [782]/[801] items
+[2016-09-27 17:24:41,766][ERROR][indices.ttl              ] [dd528_node1] bulk deletion failures for [21]/[21] items
+[2016-09-27 17:24:41,817][ERROR][indices.ttl              ] [dd528_node1] bulk deletion failures for [801]/[822] items
+```
+### 5.3 Reference
+- [_ttl problems Bulk deletion failures](https://discuss.elastic.co/t/-ttl-problems-bulk-deletion-failures/40222/3)
+- [How to make elasticsearch document ttl work?](http://stackoverflow.com/questions/16914864/how-to-make-elasticsearch-document-ttl-work)
+
+### 5.9 kill
+-  **?**
