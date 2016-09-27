@@ -39,7 +39,7 @@
 * [ElasticSearch Response](./doc/elasticsearch/response.md)
 * [ElasticSearch Update](./doc/elasticsearch/update.md)
 ### ElasticSearch-jdbc
-* [ElasticSearch Synchronize]()(参见内网知识库 » 后台系统定时任务 » 《定时任务 - ES-jdbc》)
+* [ElasticSearch Synchronize]() (参见内网知识库 » 后台系统定时任务 » 《定时任务 - ES-jdbc》)
 
 ## Kibana
 * [Kibana Installation](./doc/kibana/installation.md)
