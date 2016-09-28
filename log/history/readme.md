@@ -39,7 +39,7 @@
 |gid |是  |int/string |商品编号|
 |timestamp|否|long/string |13位时间戳，无则使用当前时间|
 
- **返回示例**
+**返回示例**
  - 多条写入使用bulk的返回:
  ``` 
     {
@@ -62,6 +62,7 @@
         }
     }
   ```
+  
   - 单条写入使用create的返回:
   ```
     {
@@ -82,7 +83,7 @@
     }
   ```
 
- **返回参数说明** 
+**返回参数说明** 
 
 - 参见[ElasticSearch标准返回说明](../../README.md#elasticsearch-response)
 
