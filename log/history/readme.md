@@ -40,28 +40,47 @@
 |timestamp|否|long/string |13位时间戳，无则使用当前时间|
 
  **返回示例**
-
-``` 
-  {
-    "status": 1,
-    "message": "",
-    "data": {
-        "took": 2,
-        "errors": false,
-        "items": [
-            {
-                "create": {
-                    "_index": "history_log_v1",
-                    "_type": "goods",
-                    "_id": "AVYBF8q8ivQZAyEcTy6N",
-                    "_version": 1,
-                    "status": 201
+ - 多条写入使用bulk的返回:
+ ``` 
+    {
+        "status": 1,
+        "message": "",
+        "data": {
+            "took": 2,
+            "errors": false,
+            "items": [
+                {
+                    "create": {
+                        "_index": "history_log_v1",
+                        "_type": "goods",
+                        "_id": "AVYBF8q8ivQZAyEcTy6N",
+                        "_version": 1,
+                        "status": 201
+                    }
                 }
-            }
-        ]
+            ]
+        }
     }
-}
-```
+  ```
+  - 单条写入使用create的返回:
+  ```
+    {
+        "status": 1,
+        "message": "",
+        "data": {
+            "_index": "history_log_v1",
+            "_type": "goods",
+            "_id": "AVduYzdTVrn2t9i4VLca",
+            "_version": 1,
+            "_shards": {
+                "total": 1,
+                "successful": 1,
+                "failed": 0
+            },
+            "created": true
+        }
+    }
+  ```
 
  **返回参数说明** 
 
