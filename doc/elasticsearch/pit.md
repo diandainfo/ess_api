@@ -67,6 +67,7 @@
 
 ## 6. mac下es与linux下es无法归属于同一集群
 
-### 6.3 
+### 6.3 kill
+- 配置cluster.name和 discovery.zen.ping.unicast.hosts
 
 
