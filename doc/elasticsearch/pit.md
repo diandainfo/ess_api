@@ -71,3 +71,7 @@
 - 配置cluster.name和 discovery.zen.ping.unicast.hosts
 
 
+## 7. 使用Elasticsearch-jdbc进行mysql与es的数据同步时，出现es峰值，导致node失联
+
+
+
