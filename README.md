@@ -41,11 +41,9 @@
 * [ElasticSearch Installation](./doc/elasticsearch/installation.md)
 * [ElasticSearch Option](./doc/elasticsearch/option.md)
 * [ElasticSearch Response](./doc/elasticsearch/response.md)
-* [ElasticSearch Update](./doc/elasticsearch/update.md)
+* [ElasticSearch Update](http://116.228.89.150:8090/pages/viewpage.action?pageId=4620450)
 
 ## Kibana
 * [Kibana Installation](./doc/kibana/installation.md)
-
-# [History](./history.md)
 
 # [LICENSE](./LICENSE)
