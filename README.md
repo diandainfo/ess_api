@@ -35,7 +35,6 @@
       * /set : POST [LBS - 设置单个店铺信息](./lbs/stores/readme.md#12-set)
       * /list : POST [LBS - 筛选、获取店铺列表](./lbs/stores/readme.md#13-list) 
 	   
-	   
 ## [ElasticSearch](./doc/elasticsearch/readme.md)
 * [ElasticSearch Instruction](./doc/elasticsearch/instruction.md)
 * [ElasticSearch Pit](./doc/elasticsearch/pit.md)
