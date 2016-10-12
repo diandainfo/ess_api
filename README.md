@@ -28,8 +28,12 @@
   	  * /analyze : POST  [货架商品 - 分词](./goods/shelf/readme.md#13-analyze)  
   * /recommend 推荐
 	* /goods [商品](./recommend/goods/readme.md)
-	  * /list :POST [推荐 - 商品 - 列表](./recommend/goods/readme.md##11-list)
-	   
+	  * /list :POST [推荐 - 商品 - 列表](./recommend/goods/readme.md#11-list)
+  * /lbs LBS相关接口
+    * /stores [店铺](./lbs/stores/readme.md)
+      * /get : POST [LBS - 获取单个店铺信息](./lbs/stores/readme.md#11-get)
+      * /set : POST [LBS - 设置单个店铺信息](./lbs/stores/readme.md#12-set)
+      * /list : POST [LBS - 筛选、获取店铺列表](./lbs/stores/readme.md#13-list) 
 	   
 	   
 ## [ElasticSearch](./doc/elasticsearch/readme.md)
