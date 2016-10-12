@@ -1,0 +1,5 @@
+# Ignore webstorm config
+.idea
+
+# Ignore .DS_Store @Mac
+.DS_Store
