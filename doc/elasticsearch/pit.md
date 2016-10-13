@@ -41,3 +41,16 @@
 ```
 ### 4.3 Reference
 * [Elasticsearch 2.1: Result window is too large (index.max_result_window)](http://stackoverflow.com/questions/35206409/elasticsearch-2-1-result-window-is-too-large-index-max-result-window)
+
+## 5. geo_point相关
+- 5.1 其中存储的坐标数据，latitude(纬度)在前，longitude(经度)在后，而不汉语中传统的“经纬度”序列。
+  - 具体查看document [Geo-point datatype](https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-point.html)
+  - 第4个栗子
+  ```
+    PUT my_index/my_type/4
+    {
+      "text": "Geo-point as an array",
+      "location": [ -71.34, 41.12 ] 
+    }
+    // Geo-point expressed as an array with the format: [ lon, lat]
+  ```
