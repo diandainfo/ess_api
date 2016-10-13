@@ -44,7 +44,8 @@
 
 ## 5. geo_point相关
 - 5.1 其中存储的坐标数据，latitude(纬度)在前，longitude(经度)在后，而不汉语中传统的“经纬度”序列。
-  - 具体查看document [Geo-point datatype](https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-point.html)
+
+  - 具体查看document [Geo-point datatype](https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-point.html)
   - 第4个栗子
   ```
     PUT my_index/my_type/4
@@ -54,3 +55,26 @@
     }
     // Geo-point expressed as an array with the format: [ lon, lat]
   ```
+- 5.2 根据distance筛选points时，在results中显示distance
+  
+  - 使用sort排序即可获知具体的distance信息，[Return distance in elasticsearch results?](http://stackoverflow.com/a/25522956/3214134)
+  - 使用`script_fields`来进行distance的运算,[Return distance in elasticsearch results?](http://stackoverflow.com/a/9309674/3214134)
+  ```
+      curl -XGET 'http://127.0.0.1:9200/geonames/_search?pretty=1'  -d '
+    {
+       "fields" : [ "_source" ],
+       "script_fields" : {
+          "distance" : {
+             "params" : {
+                "lat" : 2.27,
+                "lon" : 50.3
+             },
+             "script" : "doc[\u0027location\u0027].distanceInKm(lat,lon)"
+          }
+       }
+    }'
+  ```
+    - 使用script_fields+script时报错，`Elasticsearch failed to run inline script [doc…] using lang groovy`
+      - 某个值不存在 [Elasticsearch failed to run inline script [doc…] using lang groovy](http://stackoverflow.com/a/37836674/3214134)
+    - 或`"caused_by":{"type":"missing_method_exception","reason":...`
+      - 无此方法 
