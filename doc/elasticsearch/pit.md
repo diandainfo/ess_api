@@ -75,11 +75,13 @@
   ``` 
 	- 使用script_fields+script时报错，`Elasticsearch failed to run inline script [doc…] using lang groovy`
 	  - 某个值不存在 [Elasticsearch failed to run inline script [doc…] using lang groovy](http://stackoverflow.com/a/37836674/3214134)
-	- 或`"caused_by":{"type":"missing_method_exception","reason":...`
-	  - 无此方法，将参数直接写入方法中
+	- 报错`"caused_by":{"type":"missing_method_exception","reason":...`时
+	  - 将参数直接写入方法中
 	  ```
 	  distance: {
 	    lang: "groovy",
 	    script: "doc['location'].distanceInKm(" + data['lat'] + "," + data['lon'] + ")"
 	  }
 	  ```
+	- sort和script执行结果不相等
+	  - [Elasticsearch : The result calculated by sort in _geo_distance is not equal to using distanceInKm in script_fields](http://stackoverflow.com/questions/40011469/elasticsearch-the-result-calculated-by-sort-in-geo-distance-is-not-equal-to-u/40013035#40013035)
