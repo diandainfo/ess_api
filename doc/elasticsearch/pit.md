@@ -77,9 +77,9 @@
 	  - 某个值不存在 [Elasticsearch failed to run inline script [doc…] using lang groovy](http://stackoverflow.com/a/37836674/3214134)
 	- 或`"caused_by":{"type":"missing_method_exception","reason":...`
 	  - 无此方法，将参数直接写入方法中
-	      ```
+	  ```
 	      distance: {
 		lang: "groovy",
 		script: "doc['location'].distanceInKm(" + data['lat'] + "," + data['lon'] + ")"
 	     }
-	      ```
+	  ```
