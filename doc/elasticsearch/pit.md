@@ -47,14 +47,15 @@
 
   - 具体查看document [Geo-point datatype](https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-point.html)
   - 第4个栗子
-  ```
-    PUT my_index/my_type/4
-    {
-      "text": "Geo-point as an array",
-      "location": [ -71.34, 41.12 ] 
-    }
-    // Geo-point expressed as an array with the format: [ lon, lat]
-  ```
+    ```
+      PUT my_index/my_type/4
+      {
+        "text": "Geo-point as an array",
+        "location": [ -71.34, 41.12 ] 
+      }
+      // Geo-point expressed as an array with the format: [ lon, lat]
+    ```
+    
 - 5.2 根据distance筛选points时，在results中显示distance
   
   - 使用sort排序即可获知具体的distance信息，[Return distance in elasticsearch results?](http://stackoverflow.com/a/25522956/3214134)
