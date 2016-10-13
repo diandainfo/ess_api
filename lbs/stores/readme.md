@@ -142,3 +142,78 @@
   
 **请求方式：**
 - POST 
+
+**参数：** 
+
+|参数名|必选|类型|默认值|说明|
+|:----|:---|:-----|--:|-----|
+|lat|是|Number( float/double/int )|-|当前定位点纬度值|
+|lon|是|Number( float/double/int )|-|当前定位点经度值|
+|from|否|string|0km|单位可取值(m/km)，起始距离值，即从定位点开始的`from`距离外|
+|to|否|string|5km|单位可取值(m/km),终止距离值，即从定位点到`to`的距离内，和`from`结合组成圆环区域|
+|offset|否|int|0|起始量，分页使用|
+|limit|否|int|20|偏移量，分页使用|
+|st|否|int|-|店铺类型，可取值（1-5、99）|
+|sc|否|int|-|店铺大小，可取值（10、20、30）|
+|sv|否|int|-|店铺等级，可取值（1-4）|
+
+ **返回示例**
+
+- 给定一个坐标点，若周围有相应店铺，则成功返回:
+
+	``` 
+	 {
+	    "status": 1,
+	    "message": "",
+	    "data": {
+	        "sid": "1",
+	        "user": "1",
+	        "title": "xxxxxx",
+	        "phone": "01234567891",
+	        "address": "xx省xx市xx区xx路xx号",
+	        "state": "1",
+	        "vip": "4",
+	        "cid": 320411,
+	        "createdAt": 1407247068000,
+	        "updatedAt": 1476265138803,
+	        "formatted_address": "xx省xx市xx区xx路xx号",
+	        "province": "xx省",
+	        "city": "xx市",
+	        "district": "xx区",
+	        "street": [],
+	        "location": {
+	            "lat": 31.818798,
+	            "lon": 119.970018
+	        },
+			"distance": 0
+	    },
+		 "count": 331
+	}
+	```
+- 否则返回:
+
+	```
+	{
+    "status": 1,
+    "message": "",
+    "data": [],
+    "count": 0
+	}
+	```
+- 错误信息，具体错误信息记录在项目error_log中:
+	
+	```
+	{
+   		"status": -1
+	}
+	```
+
+ **返回参数说明** 
+
+|参数名||类型|说明|
+|:----|:---|:---|:-----|
+|count||int|总计符合条件的店铺搜索结果条数|
+|data|   |     ||
+||distance  |int     |距定位点距离，单位为m|
+||-  |-     |其他数据参见单个店铺的返回说明|
+
