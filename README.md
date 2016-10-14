@@ -6,12 +6,12 @@
 ## API整体返回说明
 - 返回参数中，一般包含以下参数
   
-|参数名|是否必然返回|类型|说明|取值范围及说明|
+|参数名|必然返回|类型|说明|取值范围及说明|
 |:----|:---|:---|:-----|--:|
 |status|是|int|判断是否请求成功，及内部逻辑是否完成|>0即为成功，<0即为失败;仅代表请求完成并且成功，并不代表取值不为空,status>0值，data可能为空|
 |message|是|string|存放错误信息|status>0时，此值为''，无意义。使用ES数据时，此值可能出现大量ES错误，建议不要使用此值进行页面显示|
 |data|是|不定|返回数据|可能取值 int、object、array，视具体请求进行分别拆分|
-|count|否|int|总计符合条件的店铺搜索结果条数|只有需要分页的数据才会返回此值|
+|count|否|int|总计符合条件的结果条数|只有需要分页的数据才会返回此值|
 
 
 
@@ -46,7 +46,7 @@
       * /get : POST [LBS - 获取单个店铺信息](./lbs/stores/readme.md#11-get)
       * /set : POST [LBS - 设置单个店铺信息](./lbs/stores/readme.md#12-set)
       * /list : POST [LBS - 筛选、获取店铺列表](./lbs/stores/readme.md#13-list)
-      * /distance : POST[LBS - 获取单个店铺的定位距离](./lbs/stores/readme.md#14-distance) 
+      * /distance : POST [LBS - 获取单个店铺的定位距离](./lbs/stores/readme.md#14-distance) 
 	   
 ## [ElasticSearch](./doc/elasticsearch/readme.md)
 * [ElasticSearch Instruction](./doc/elasticsearch/instruction.md)
