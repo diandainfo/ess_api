@@ -47,6 +47,9 @@
       * /set : POST [LBS - 设置单个店铺信息](./lbs/stores/readme.md#12-set)
       * /list : POST [LBS - 筛选、获取店铺列表](./lbs/stores/readme.md#13-list)
       * /distance : POST [LBS - 获取单个店铺的定位距离](./lbs/stores/readme.md#14-distance) 
+    * /history [历史](./lbs/history/readme.md)
+	  * /sign : POST [LBS - 上班签到、下班签退](./lbs/history/readme.md#11-sign)
+	  * /check : POST [LBS - 店铺签到](./lbs/history/readme.md#12-check) 
 	   
 ## [ElasticSearch](./doc/elasticsearch/readme.md)
 * [ElasticSearch Instruction](./doc/elasticsearch/instruction.md)
