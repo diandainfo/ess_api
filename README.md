@@ -43,14 +43,19 @@
 	  * /list :POST [推荐 - 商品 - 列表](./recommend/goods/list/readme.md#11-list)
   * /lbs LBS相关接口
     * /stores [店铺](./lbs/stores/readme.md)
-      * /get : POST [LBS - 获取单个店铺信息](./lbs/stores/readme.md#11-get)
-      * /set : POST [LBS - 设置单个店铺信息](./lbs/stores/readme.md#12-set)
-      * /list : POST [LBS - 筛选、获取店铺列表](./lbs/stores/readme.md#13-list)
-      * /distance : POST [LBS - 获取单个店铺的定位距离](./lbs/stores/readme.md#14-distance) 
+      * /init *初始化店铺数据，不提供对外接口，使用`/lbs/option`进行管理*
+      * /get : POST [LBS - 获取 - 单个 - 店铺信息](./lbs/stores/readme.md#11-get)
+      * /set : POST [LBS - 设置 - 单个 - 店铺信息](./lbs/stores/readme.md#12-set)
+      * /list : POST [LBS - 筛选、获取 - 店铺列表](./lbs/stores/readme.md#13-list)
+      * /distance : POST [LBS - 获取 - 单个 - 店铺的定位距离](./lbs/stores/readme.md#14-distance) 
     * /history [历史](./lbs/history/readme.md)
-	  * /sign : POST [LBS - 上班签到、下班签退](./lbs/history/readme.md#11-sign)
-	  * /check : POST [LBS - 店铺签到](./lbs/history/readme.md#12-check) 
-	   
+	  * /sign : POST [LBS - 写入 - 上班签到、下班签退](./lbs/history/readme.md#11-sign)
+	  * /check : POST [LBS - 写入 - 店铺签到](./lbs/history/readme.md#12-check) 
+	* /salesman [业务员](./lbs/salesman/readme.md)
+      * /init *初始化店铺数据，不提供对外接口，使用`/lbs/option`进行管理*
+	  * /update : POST [LBS - 更新 - 百度鹰眼 - 单个业务员信息](./lbs/salesman/readme.md#11-update)
+	  * /list  : POST [LBS - 获取 - 百度鹰眼 - 业务员列表](./lbs/salesman/readme.md#12-list)
+	  
 ## [ElasticSearch](./doc/elasticsearch/readme.md)
 * [ElasticSearch Instruction](./doc/elasticsearch/instruction.md)
 * [ElasticSearch Pit](./doc/elasticsearch/pit.md)
