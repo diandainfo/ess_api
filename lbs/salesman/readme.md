@@ -124,3 +124,125 @@
 ||state|int|当前状态|
 ||address|int|当location参数存在时，此值为最后一次定位点地址，否则此列不存在|
 
+# 1.3 /delete
+
+**简要描述：** 
+- 批量删除业务员entity
+
+**请求URL：** 
+- ` /api/lbs/salesman/delete `
+  
+**请求方式：**
+- POST 
+
+**参数：** 
+
+|参数名|必选|类型|说明|
+|:----|:---|:-----|-----|
+|mid   |是|int |指定查询的业务员编号,支持输入多个mid，使用数组，如： [1,2,3]|
+
+**返回示例**
+
+- 成功返回:
+
+	``` 
+	{
+	    "status": 1,
+	    "message": "",
+	    "data": {
+	        "total": 2,
+	        "success": 1,
+	        "fail": 1,
+	        "results": [
+	            {
+	                "mid": 213213,
+	                "message": "删除失败指定track不存在"
+	            }
+	        ]
+	    }
+	}
+	```
+
+**返回参数说明** 
+
+|参数名||类型|说明|
+|:----|:---|:---|:-----|
+|data|   |     ||
+||total|int|总计需要删除的mid数量|
+||success|int|成功的数量|
+||failed|int|失败的数量|
+||results|array|失败的原因|
+
+# 1.3 /add
+
+**简要描述：** 
+- 新增业务员entity
+
+**请求URL：** 
+- ` /api/lbs/salesman/add `
+  
+**请求方式：**
+- POST 
+
+**参数：** 
+
+|参数名|必选|类型|说明|
+|:----|:---|:-----|-----|
+|mid   |是|int |业务员编号|
+|cid|是|int|城市编号|
+|mt|是|int|业务员状态|
+|mp|是|string|业务员手机号|
+|mna|是|string|业务员姓名|
+
+**返回示例**
+
+- 成功返回:
+
+	``` 
+	{
+	    "status": 1,
+	    "message": "",
+	    "data": true
+	}
+	```
+- 错误返回:
+ 
+	```
+	{
+	    "status": -17,
+	    "message": "业务员编号 : 188  ; entity已经存在"
+	}
+	```
+
+**返回参数说明** 
+- 见[基本参数说明](../../readme.md#api整体返回说明)
+
+# 1.8 /trace
+
+**简要描述：** 
+- 获取指定业务员的百度鹰眼轨迹信息
+- 原装调用百度接口的数据中转，具体接口说明见[gethistory——查询历史轨迹](http://lbsyun.baidu.com/index.php?title=yingyan/api/track#gethistory.E2.80.94.E2.80.94.E6.9F.A5.E8.AF.A2.E5.8E.86.E5.8F.B2.E8.BD.A8.E8.BF.B9)
+- 起始时间根据06:00-22:00与上下班签到时间的交集确认
+
+**请求URL：** 
+- ` /api/lbs/salesman/trace `
+  
+**请求方式：**
+- POST 
+
+**参数：** 
+
+|参数名|必选|类型|说明|
+|:----|:---|:-----|-----|
+|mid   |是|int |指定查询的业务员编号|
+|date|否|string|默认为今日，支持"YYYY-MM-DD"，可被new Date()格式化即可|
+
+
+- 实际使用百度map的api进行请求，举个栗子：
+	- [http://api.map.baidu.com/trace/v2/track/gethistory?entity_name=188&start_time=1477173600&end_time=1477220027&process_option=need_mapmatch=1,transport_mode=2&is_processed=1&page_size=5000&sort_type=1&ak=Ql6WWdnoZGfbLEwtaMgHDKDX4w98haWO&service_id=126838](http://api.map.baidu.com/trace/v2/track/gethistory?entity_name=188&start_time=1477173600&end_time=1477220027&process_option=need_mapmatch=1,transport_mode=2&is_processed=1&page_size=5000&sort_type=1&ak=Ql6WWdnoZGfbLEwtaMgHDKDX4w98haWO&service_id=126838)
+
+**返回示例**
+- 具体接口说明见[gethistory——查询历史轨迹](http://lbsyun.baidu.com/index.php?title=yingyan/api/track#gethistory.E2.80.94.E2.80.94.E6.9F.A5.E8.AF.A2.E5.8E.86.E5.8F.B2.E8.BD.A8.E8.BF.B9)
+
+**返回参数说明** 
+- 具体接口说明见[gethistory——查询历史轨迹](http://lbsyun.baidu.com/index.php?title=yingyan/api/track#gethistory.E2.80.94.E2.80.94.E6.9F.A5.E8.AF.A2.E5.8E.86.E5.8F.B2.E8.BD.A8.E8.BF.B9)

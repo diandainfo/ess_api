@@ -53,14 +53,14 @@
     * /history [LBS - 历史记录](./lbs/history/readme.md)
 	  * /sign : POST [LBS - 写入 - 上班签到、下班签退](./lbs/history/readme.md#11-sign)
 	  * /check : POST [LBS - 写入 - 店铺签到](./lbs/history/readme.md#12-check) 
-	  * /get : POST **待整理** [LBS - 获取 - 上、下班，店铺签到记录]  
+	  * /get : POST [LBS - 获取 - 上、下班，店铺签到记录](./lbs/history/readme.md#13-get)
 	* /salesman [业务员](./lbs/salesman/readme.md)
       * /init *初始化店铺数据，不提供对外接口，使用`/lbs/option`进行管理*
 	  * /update : POST [LBS - 更新 - 百度鹰眼 - 单个业务员信息](./lbs/salesman/readme.md#11-update)
 	  * /list  : POST [LBS - 获取 - 百度鹰眼 - 业务员列表](./lbs/salesman/readme.md#12-list)
-	  * /trace : POST **待整理** [LBS - 获取 - 百度鹰眼 - 业务员轨迹点]
-	  * /add   : POST **todo** [LBS - 新增 - 百度鹰眼 - 业务员Entity]
-	  * /clear : POST **todo** [LBS - 清除 - 百度鹰眼 - 业务员Entity数据]
+	  * /delete   : POST [LBS - 批量删除 - 百度鹰眼 - 业务员Entity](./lbs/salesman/readme.md#13-delte)( 此删除直接删除数据，不是修改状态 )
+	  * /add   : POST [LBS - 新增 - 百度鹰眼 - 业务员Entity](./lbs/salesman/readme.md#14-add)
+	  * /trace : POST [LBS - 获取 - 百度鹰眼 - 业务员轨迹点](./lbs/salesman/readme.md#18-trace)
 	  
 ## [ElasticSearch](./doc/elasticsearch/readme.md)
 * [ElasticSearch Instruction](./doc/elasticsearch/instruction.md)
