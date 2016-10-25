@@ -101,6 +101,7 @@ history_info: {
 |cid|是|int|业务员所在城市编号|
 |lat|是|double|纬度，签到时所在坐标点纬度|
 |lon|是|double|经度，签到时所在坐标点经度|
+|address|是|string|签到时定位地址|
 |distance|是|double|定位距离，通过`/api/lbs/stores/distance`获取的签到定位距离|
 |time|否|long|13位，签到时间戳，默认为当前时刻|
 
