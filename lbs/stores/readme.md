@@ -86,6 +86,7 @@
 **简要描述：** 
 - 更新单个店铺的相关信息
 - 更新店铺关联业务员的编号
+- 有则更新，无则新建
 
 **请求URL：** 
 - ` /api/lbs/stores/set `
@@ -98,13 +99,15 @@
 |参数名|必选|类型|说明|
 |:----|:---|:-----|-----|
 |sid   |是|int |storeId,店铺编号|
-|lrb  |否|boolean  |locationResetBoolean,是否需要重新抓取定位地址和对应坐标，地址发生较大改变时需要置为true|
+|lat|是|double|latitude,百度定位坐标、纬度数据|
+|lon|是|double|longitude,百度定位坐标、经度数据|
+|fd|是|string|formatted_address,百度定位标准化地址|
 |user  |否|string  |店主姓名|
 |title |否 |string |店铺名称|
 |phone  |否|string |手机号|
 |state  |否|int     |状态|
 |vip  |否|int     |vip等级|
-|cid  |否|int     |cityId，区县编号|
+|cid  |否|int     |countyId，区县编号|
 |address |否 |string     |地址|
 |mid|否|int|关联业务员编号|
 
@@ -155,7 +158,7 @@
 |mid|是|int|-|业务员编号|
 |from|否|int|0|单位(m)，起始距离值，即从定位点开始的`from`距离外|
 |to|否|int|5000|单位(m),终止距离值，即从定位点到`to`的距离内，和`from`结合组成圆环区域|
-|offset|否|int|1|起始量|
+|offset|否|int|0|起始量|
 |limit|否|int|20|偏移量|
 |st|否|int|-|店铺类型，可取值（1-5、99），必须是数组,[1]或[1,2]|
 |sc|否|int|-|店铺大小，可取值（10、20、30），必须是数组|
@@ -232,7 +235,87 @@
 ||-  |-     |其他数据参见单个店铺的返回说明|
 
 
-# 1.4 /distance
+# 1.4 /sync
+
+**简要描述：** 
+- 根据条件筛选、获取某些店铺的相关信息
+
+**请求URL：** 
+- ` /api/lbs/stores/list `
+  
+**请求方式：**
+- POST 
+
+**参数：** 
+
+|参数名|必选|类型|默认值|说明|
+|:----|:---|:-----|--:|-----|
+|offset|否|int|0|起始量|
+|limit|否|int|10000|偏移量，最大值为10000，单次查询数量不得超过10000|
+
+**返回示例**
+
+- 给定一个坐标点和业务员编号，例如:
+ 	
+	```
+	{
+      offset:0
+	  ,limit:1
+	}
+    ```
+- 成功返回:
+
+	``` 
+	 {
+	    "status": 1,
+	    "message": "",
+	    "count": 10,
+	    "data": [
+	        {
+	            "sid": 4,
+	            "user": "4",
+	            "title": "xxx",
+	            "phone": "12345678",
+	            "address": "xxxxx",
+	            "state": -10,
+	            "vip": 1,
+	            "cid": 320507,
+	            "createdAt": 1407247068000,
+	            "updatedAt": 1477357391876,
+	            "capacity": 0,
+	            "type": 0,
+	            "mid": 0,
+	            "formatted_address": "xxxx",
+	            "precise": 0.16,
+	            "province": "xxx",
+	            "city": "xxxx",
+	            "district": "xxxx",
+	            "street": "",
+	            "lat": 31.939946043961303,
+	            "lon": 119.90315390841334
+	        }
+	    ]
+	}
+	```
+- 错误信息，具体错误信息记录在项目error_log中:
+	
+	```
+	{
+   		"status": -1
+	}
+	```
+
+**返回参数说明** 
+
+|参数名||类型|说明|
+|:----|:---|:---|:-----|
+|count||int|总计符合条件的店铺搜索结果条数|
+|data|   |     ||
+||-  |-     |数据说明参见单个店铺的返回说明|
+
+
+
+# 1.7 /distance
 
 **简要描述：** 
 - 根据定位坐标计算距离某个店铺的距离
@@ -290,7 +373,7 @@
 |data|float|定位坐标点距离店铺的距离，单位(m)|
 
 
-# 1.5 /distances
+# 1.8 /distances
 
 **简要描述：** 
 - 根据定位坐标批量计算多个店铺的距离
