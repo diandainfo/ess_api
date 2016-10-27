@@ -99,9 +99,9 @@
 |参数名|必选|类型|说明|
 |:----|:---|:-----|-----|
 |sid   |是|int |storeId,店铺编号|
-|lat|是|double|latitude,百度定位坐标、纬度数据|
-|lon|是|double|longitude,百度定位坐标、经度数据|
-|fd|是|string|formatted_address,百度定位标准化地址|
+|lat|否|double|**新增店铺时必须传值**,latitude,百度定位坐标、纬度数据|
+|lon|否|double|**新增店铺时必须传值**,longitude,百度定位坐标、经度数据|
+|fd|否|string|**新增店铺时必须传值**,formatted_address,百度定位标准化地址|
 |user  |否|string  |店主姓名|
 |title |否 |string |店铺名称|
 |phone  |否|string |手机号|
