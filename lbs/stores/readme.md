@@ -320,7 +320,7 @@
 - 批量设置店铺信息（vip、mid）
 
 **请求URL：** 
-- ` /api/lbs/salesman/batch `
+- ` /api/lbs/stores/batch `
   
 **请求方式：**
 - POST 
