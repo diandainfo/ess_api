@@ -173,7 +173,7 @@
 ||failed|int|失败的数量|
 ||results|array|失败的原因|
 
-# 1.3 /add
+# 1.4 /add
 
 **简要描述：** 
 - 新增业务员entity
