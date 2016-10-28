@@ -60,7 +60,7 @@
       * /init *初始化店铺数据，不提供对外接口，使用`/lbs/option`进行管理*
 	  * /update : POST [LBS - 更新 - 百度鹰眼 - 单个业务员信息](./lbs/salesman/readme.md#11-update)
 	  * /list  : POST [LBS - 获取 - 百度鹰眼 - 业务员列表](./lbs/salesman/readme.md#12-list)
-	  * /delete   : POST [LBS - 批量删除 - 百度鹰眼 - 业务员Entity](./lbs/salesman/readme.md#13-delte)( 此删除直接删除数据，不是修改状态 )
+	  * /delete   : POST [LBS - 批量删除 - 百度鹰眼 - 业务员Entity](./lbs/salesman/readme.md#13-delte)( 此删除直接删除数据，不是修改状态 )(单个删除业务员时，同时解除其店铺关联关系)
 	  * /add   : POST [LBS - 新增 - 百度鹰眼 - 业务员Entity](./lbs/salesman/readme.md#14-add)
 	  * /trace : POST [LBS - 获取 - 百度鹰眼 - 业务员轨迹点](./lbs/salesman/readme.md#18-trace)
 	  
