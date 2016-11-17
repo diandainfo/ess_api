@@ -37,7 +37,15 @@
     - Last-Modified
       - [last modified file date in node.js](http://stackoverflow.com/questions/7559555/last-modified-file-date-in-node-js)
       - [node.js: browser image caching with correct headers](http://stackoverflow.com/questions/22201490/node-js-browser-image-caching-with-correct-headers)
+    - Content-typ ， 返回的编码为utf-8
     - 使用res.setHeader(key,value)方法写入对应header信息
+    ```
+    // 设置返回头部信息
+        res.setHeader('ETag', new Date(data['mtime']).getTime() + '-' + data['size']);
+        res.setHeader('Last-Modified', data['mtime'].toUTCString());
+        res.setHeader('Content-type', 'text/html;charset=utf-8');
+        return res.end(data['txt']);
+    ```
 
 **请求URL：** 
 - ` /api/goods/keyword/ext `
