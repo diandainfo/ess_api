@@ -38,6 +38,9 @@
   	  * /suggest : POST [货架商品 - 搜索建议](./goods/shelf/readme.md#11-suggest)  
   	  * /search : POST  [货架商品 - 搜索关键词](./goods/shelf/readme.md#12-search)  
   	  * /analyze : POST  [货架商品 - 分词](./goods/shelf/readme.md#13-analyze)  
+  	* /keyword [商品品牌标签](./goods/keyword/readme.md)
+  	  * / :  GET + JSONP [商品品牌标签 - 管理](./goods/keyword/readme.md#11-page)
+  	  * /ext : GET [商品品牌标签 - ES远程库地址](./goods/keyword/readme.md#12-ext)
   * /recommend 推荐
 	* /goods [商品](./recommend/goods/list/readme.md)
 	  * /list :POST [推荐 - 商品 - 列表](./recommend/goods/list/readme.md#11-list)
