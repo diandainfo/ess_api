@@ -229,21 +229,18 @@ history_info: {
 **返回示例**
 
 - 请求：
-
-	```
-	 /api/lbs/history/salesman -d '
-	{
+  ```
+  /api/lbs/history/salesman -d '
+  {
     mid:[123,69,140]
-		,date:'2016-12-11'
-	}'
-	```
+   ,date:'2016-12-11'
+  }'
+  ```
 
 - 时，返回
   - **123不存在记录，无返回对象中缺失该key**
-  
-	``` 
-
-	{
+  ``` 
+  {
     "status": 1,
     "message": "",
     "data": {
@@ -259,8 +256,7 @@ history_info: {
         }
     }
   }
-
-	```
+  ```
 
 **返回参数说明** 
 
