@@ -233,7 +233,7 @@ history_info: {
   /api/lbs/history/salesman -d '
   {
     mid:[123,69,140]
-   ,date:'2016-12-11'
+    ,date:'2016-12-11'
   }'
   ```
 
