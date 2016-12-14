@@ -224,7 +224,7 @@
 	
 	```
 	{
-   		"status": -1
+      "status": -1
 	}
 	```
 
@@ -241,10 +241,10 @@
 # 1.4 /sync
 
 **简要描述：** 
-- 根据条件筛选、获取某些店铺的相关信息
+- 拉取店铺数据，用于同步ES数据到Mysql
 
 **请求URL：** 
-- ` /api/lbs/stores/list `
+- ` /api/lbs/stores/sync `
   
 **请求方式：**
 - POST 
