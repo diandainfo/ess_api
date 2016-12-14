@@ -103,6 +103,7 @@ history_info: {
 |lon|是|double|经度，签到时所在坐标点经度|
 |address|是|string|签到时定位地址|
 |distance|是|double|定位距离，通过`/api/lbs/stores/distance`获取的签到定位距离|
+|ld|否|double|定位精度，签到点的定位精度，用于判断定位误差|
 |time|否|long|13位，签到时间戳，默认为当前时刻|
 
 **返回示例**
@@ -110,7 +111,7 @@ history_info: {
 - 请求：
 
 	```
-	 /api/lbs/history/sign -d '
+	 /api/lbs/history/check -d '
 	{
 		mid:188
 		,cid:320400
@@ -118,6 +119,8 @@ history_info: {
 		,sna:"xxxx店"
 		,distance:51
 		,lat:31.682951
+		,ld:1.214
+		,address:'xx省xx市xx路xx号'
 		,lon:119.93631
 	}'
 	```
