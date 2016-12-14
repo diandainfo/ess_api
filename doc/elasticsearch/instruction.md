@@ -28,7 +28,7 @@
 * analysis-ik & analysis-pinyin
  * [analysis-ik-v1.3.0](./analysis-ik/installation.md)
  * analysis-ik-v1.9.4和analysis-pinyin-v1.7.4下载对应release中的zip，解压，重启es即可
-* elasticsearch-jdbc 下载对应release中zip，unzip，修改bin下.sh文件中响应的参数，shell启动即可
+* elasticsearch-jdbc 下载对应release中zip，unzip，修改bin下.sh文件中相应的参数，shell启动即可
  * 【】中为说明，需要换成对应参数或者code
  * # 为注释，删除即可
  * 参数说明见[Parameters](https://github.com/jprante/elasticsearch-jdbc#parameters)
