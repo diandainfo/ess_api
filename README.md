@@ -51,7 +51,7 @@
       * /set : POST [LBS - 设置 - 单个 - 店铺信息](./lbs/stores/readme.md#12-set)
       * /list : POST [LBS - 筛选、获取 - 店铺列表](./lbs/stores/readme.md#13-list)
       * /sync : POST [LBS - 同步 - 店铺信息](./lbs/stores/readme.md#14-sync)
-      * /batch : POST [LBS - 设置 - 批量 - 店铺信息(vip、mid)](./lbs/stores/readme.md#15-batch)
+      * /batch : POST [LBS - 设置 - 批量 - 店铺信息(vip、mid...)](./lbs/stores/readme.md#15-batch)
       * /distance : POST [LBS - 获取 - 单个 - 店铺的定位距离](./lbs/stores/readme.md#17-distance) 
       * /distances : POST [LBS - 获取 - 批量 - 店铺的定位距离](./lbs/stores/readme.md#18-distances)
     * /ssr/init *初始化店铺业务员关系数据，不提供对外接口，使用`/lbs/option`进行管理* 

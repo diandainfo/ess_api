@@ -327,7 +327,7 @@
 # 1.5 /batch
 
 **简要描述：** 
-- 批量设置店铺信息（vip、mid）
+- 批量设置店铺信息（vip、mid、lld、lid、type）
 
 **请求URL：** 
 - ` /api/lbs/stores/batch `
@@ -345,6 +345,7 @@
 |mid|否|int|店铺的关联业务员编号|
 |lld|否|string|lastLoginDate，最后一次登录日期，格式化为"2016-01-01"，会进行格式校验|
 |lid|否|integer|限制整型，线路编号|
+|type|否|integer|限制整型，店铺类型
 
 **返回示例**
 
