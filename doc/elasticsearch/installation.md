@@ -80,10 +80,12 @@
   * 在`elasticsearch/plugins`[下载zip](https://github.com/medcl/elasticsearch-analysis-ik/releases)
   
   ```    
-    wget https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v1.9.4/elasticsearch-analysis-ik-1.9.4.zip
+  wget https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v1.9.4/elasticsearch-analysis-ik-1.9.4.zip
 
-    unzip elasticsearch-analysis-ik-1.9.4.zip -d analysis-ik
-  ```
+  unzip elasticsearch-analysis-ik-1.9.4.zip -d analysis-ik
+
+  ```
+
   * 解压后放到`elasticsearch/plugins/analysis-ik`中
   * 重启ES，无报错即可
 
@@ -93,10 +95,12 @@
   * 下载zip
 
   ```
-	wget https://github.com/medcl/elasticsearch-analysis-pinyin/releases/download/v1.7.4/elasticsearch-analysis-pinyin-1.7.4.zip
+  wget https://github.com/medcl/elasticsearch-analysis-pinyin/releases/download/v1.7.4/elasticsearch-analysis-pinyin-1.7.4.zip
 
-        unzip elasticsearch-analysis-pinyin-1.7.4.zip -d analysis-pinyin
+  unzip elasticsearch-analysis-pinyin-1.7.4.zip -d analysis-pinyin
+
   ```
+
   * 解压后放到`elasticsearch/plugins/analysis-pinyin`
   * 重启ES，无报错即可
 
