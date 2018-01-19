@@ -4,7 +4,7 @@
 # 0 Mapping
 **具体数据类型见下 `type` 列:**
 ```
-history_info: {
+location_history: {
         properties: {
             mid: {type: 'integer'}       // salesmanEntityId,业务员实体编号
             , cid: {type: 'integer'}    //城市编号
